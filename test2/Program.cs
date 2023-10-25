@@ -4,40 +4,19 @@
     {
         public static void Main(string[] args)
         {
-            int x = int.Parse(Console.ReadLine());
-
-            Console.WriteLine(MySqrt(x));
-        }
-        public static int MySqrt(int x)
-        {
-            if (x < 0 || x > Math.Pow(2, 31) - 1)
-            {
-                throw new ArgumentException($"0 <= x <= {Math.Pow(2, 31) - 1}");
-            }
-            else
-            {
-                double sqrt = 1;
-                int step = 0;
-
-                while ((int)(sqrt * sqrt) != x)
-                {
-                    sqrt = sqrt + Math.Abs(((Math.Pow(-1, step) * Fact(2*step)) / 
-                            ((1 - 2*step)*Math.Pow(Fact(step), 2)*(Math.Pow(4, step)))) * 
-                           Math.Pow(x, step));
-                    step++;
-                }
-
-                return (int)sqrt;
-            }
+            Console.WriteLine("Type   Byte(s) of memory   Min   Max");
+            Console.WriteLine($"Sbyte   {sizeof(sbyte)}                 {sbyte.MinValue}   {sbyte.MaxValue}");
+            Console.WriteLine($"byte   {sizeof(byte)}                 {byte.MinValue}   {byte.MaxValue}");
+            Console.WriteLine($"short   {sizeof(short)}                 {short.MinValue}   {short.MaxValue}");
+            Console.WriteLine($"ushort   {sizeof(ushort)}                 {ushort.MinValue}   {ushort.MaxValue}");
+            Console.WriteLine($"int   {sizeof(int)}                 {int.MinValue}   {int.MaxValue}");
+            Console.WriteLine($"uint   {sizeof(uint)}                 {uint.MinValue}   {uint.MaxValue}");
+            Console.WriteLine($"long   {sizeof(long)}                 {long.MinValue}   {long.MaxValue}");
+            Console.WriteLine($"ulong   {sizeof(ulong)}                 {ulong.MinValue}   {ulong.MaxValue}");
+            Console.WriteLine($"float   {sizeof(float)}                 {float.MinValue}   {float.MaxValue}");
+            Console.WriteLine($"double   {sizeof(double)}                 {double.MinValue}   {double.MaxValue}");
+            Console.WriteLine($"decimal   {sizeof(decimal)}                 {decimal.MinValue}   {decimal.MaxValue}");
         }
 
-        public static int Fact(int a)
-        {
-            if (a == 1) return 1;
-
-            if(a == 0) return 0;
-
-            return a * Fact(a - 1);
-        }
     }
 }

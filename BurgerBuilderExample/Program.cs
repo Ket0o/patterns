@@ -22,7 +22,7 @@ PrintBurgerCheck(largeBurger);
 Console.WriteLine();
 PrintBurgerCheck(new Burger());
 
-void PrintBurgerCheck(Burger burger)
+static void PrintBurgerCheck(Burger burger)
 {
     if (burger.Bacon && burger.Cheese && burger.Tomato)
     {
