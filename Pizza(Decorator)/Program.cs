@@ -1,4 +1,6 @@
-﻿abstract class Jewelry
+﻿namespace Jewelry_Decorator;
+
+abstract class Jewelry
 {
     public string Name { get; set; }
 
@@ -74,38 +76,16 @@ class Program
 {
     static void Main()
     {
-        Jewelry necklaceWithDiamond = new Necklace();
-        necklaceWithDiamond = new DiamondJewelry(necklaceWithDiamond);
-
-        Jewelry necklaceWithTapaz = new Necklace();
-        necklaceWithTapaz = new TapazJewelry(necklaceWithTapaz);
-
-        Jewelry bracelet = new Bracelet();
-        bracelet = new DiamondJewelry(bracelet);
-        bracelet = new TapazJewelry(bracelet);
-
-        Jewelry necklacetWithRubin = new Necklace();
-        necklacetWithRubin = new RubinJewelry(necklacetWithRubin);
-        necklacetWithRubin = new TapazJewelry(necklacetWithRubin);
-
-
-
-        Console.WriteLine(necklaceWithDiamond.Name);
-        Console.WriteLine(necklaceWithDiamond.GetCost());
-
+        Pizza margaret = new Margaret();
+        Console.WriteLine(margaret.Name + " " + margaret.GetCost());
         Console.WriteLine();
 
-        Console.WriteLine(necklaceWithTapaz.Name);
-        Console.WriteLine(necklaceWithTapaz.GetCost());
-
+        margaret = new CheeseDecorator(margaret);
+        Console.WriteLine(margaret.Name + " " + margaret.GetCost());
         Console.WriteLine();
 
-        Console.WriteLine(bracelet.Name);
-        Console.WriteLine(bracelet.GetCost());
-
+        margaret = new TurkeyDecorator(margaret);
+        Console.WriteLine(margaret.Name + " " + margaret.GetCost());
         Console.WriteLine();
-
-        Console.WriteLine(necklacetWithRubin.Name);
-        Console.WriteLine(necklacetWithRubin.GetCost());
     }
 }
