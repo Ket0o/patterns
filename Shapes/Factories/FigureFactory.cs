@@ -1,11 +1,6 @@
-﻿using Shapes.Shapes;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using FactoryMethod.Figures;
 
-namespace Shapes.Factories
+namespace FactoryMethod.Factories
 {
     public abstract class FigureFactory
     {

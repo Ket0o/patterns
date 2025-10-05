@@ -1,4 +1,4 @@
-﻿namespace Shapes.Shapes
+﻿namespace FactoryMethod.Figures
 {
     public interface IFigure
     {

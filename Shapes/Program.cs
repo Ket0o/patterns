@@ -1,5 +1,4 @@
-﻿using Shapes.Shapes;
-using Shapes.Factories;
+﻿using FactoryMethod.Factories;
 
 class Program
 {
