@@ -1,4 +1,4 @@
-﻿namespace File_system_Composite_;
+﻿namespace Composite;
 
 abstract class Component
 {

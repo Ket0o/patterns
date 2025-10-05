@@ -1,4 +1,4 @@
-﻿namespace Currency
+﻿namespace Adapter
 {
     interface ICurrency
     {

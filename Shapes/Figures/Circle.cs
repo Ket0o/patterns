@@ -1,4 +1,4 @@
-﻿namespace Shapes.Shapes
+﻿namespace FactoryMethod.Figures
 {
     public class Circle : IFigure
     {

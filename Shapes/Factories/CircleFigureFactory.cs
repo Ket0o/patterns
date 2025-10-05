@@ -1,6 +1,6 @@
-﻿using Shapes.Shapes;
+﻿using FactoryMethod.Figures;
 
-namespace Shapes.Factories
+namespace FactoryMethod.Factories
 {
     public class CircleFigureFactory : FigureFactory
     {

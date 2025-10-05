@@ -1,5 +1,4 @@
-﻿using System.Net.Http.Headers;
-using BurgerBuilderExample;
+﻿using Builder;
 
 var burgerBuilder = new BurgerBuilder();
 
