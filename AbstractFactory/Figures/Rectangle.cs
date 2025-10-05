@@ -1,4 +1,4 @@
-﻿namespace FactoryMethod.Figures
+﻿namespace AbstractFactory.Figures
 {
     internal class Rectangle : IFigure
     {
