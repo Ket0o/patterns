@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31912.275
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Builder", "BurgerBuilderExample\Builder.csproj", "{7504C3CB-A2E1-4009-9E8B-BAD176CC0AFE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Builder", "Builder\Builder.csproj", "{7504C3CB-A2E1-4009-9E8B-BAD176CC0AFE}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FactoryMethod", "Shapes\FactoryMethod.csproj", "{40EE57C1-D9E6-429C-B44E-A129C59709C5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FactoryMethod", "FactoryMethod\FactoryMethod.csproj", "{40EE57C1-D9E6-429C-B44E-A129C59709C5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Adapter", "Currency\Adapter.csproj", "{F2CF3585-9C31-400A-B576-E5D2A00151CA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Adapter", "Adapter\Adapter.csproj", "{F2CF3585-9C31-400A-B576-E5D2A00151CA}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Decorator", "Pizza(Decorator)\Decorator.csproj", "{F69F538E-4F88-4DFB-B66B-FA18F6C964B0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Decorator", "Decorator\Decorator.csproj", "{F69F538E-4F88-4DFB-B66B-FA18F6C964B0}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Composite", "Composite\Composite.csproj", "{F8D16E1C-5729-4E4A-B62C-1EB1F0407710}"
 EndProject
