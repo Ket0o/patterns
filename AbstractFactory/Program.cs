@@ -1,4 +1,4 @@
-﻿using FactoryMethod.Factories;
+﻿using AbstractFactory.Factories;
 
 class Program
 {

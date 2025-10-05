@@ -1,6 +1,6 @@
-﻿using FactoryMethod.Figures;
+﻿using AbstractFactory.Figures;
 
-namespace FactoryMethod.Factories
+namespace AbstractFactory.Factories
 {
     internal class ReactangleFigureFactory : FigureFactory
     {
