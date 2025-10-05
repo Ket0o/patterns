@@ -1,44 +1,50 @@
-﻿abstract class Component
-{
-    protected string name;
+﻿namespace File_system_Composite_;
 
-    public Component(string name)
+abstract class Component
+{
+    protected readonly string Name;
+    
+    protected Component(string name)
     {
-        this.name = name;
+        Name = name;
     }
 
-    public virtual void Add(Component component) { }
+    public virtual void Add(Component component)
+    {
+    }
 
-    public virtual void Remove(Component component) { }
+    public virtual void Remove(Component component)
+    {
+    }
 
     public virtual void Print()
     {
-        Console.WriteLine(name);
+        Console.WriteLine(Name);
     }
 }
 class Directory : Component
 {
-    private List<Component> components = new List<Component>();
-
+    private readonly List<Component> _components = new();
+    
     public Directory(string name): base(name) {}
 
     public override void Add(Component component)
     {
-        components.Add(component);
+        _components.Add(component);
     }
 
     public override void Remove(Component component)
     {
-        components.Remove(component);
+        _components.Remove(component);
     }
 
     public override void Print()
     {
-        Console.WriteLine("Узел: " + name);
+        Console.WriteLine("Узел: " + Name);
         Console.WriteLine("Подузлы:");
-        for (int i = 0; i < components.Count; i++)
+        for (int i = 0; i < _components.Count; i++)
         {
-            components[i].Print();
+            _components[i].Print();
         }
     }
 }
@@ -46,7 +52,7 @@ class Directory : Component
 class File : Component
 {
     public File(string name)
-            : base(name)
+        : base(name)
     { }
 }
 

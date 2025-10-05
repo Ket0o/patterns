@@ -1,16 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Shapes.Shapes
+﻿namespace Shapes.Shapes
 {
     internal class Rectangle : IFigure
     {
-        public int Height { get; set; }
+        private int Height { get; }
 
-        public int Width { get; set; }
+        private int Width { get; }
 
         public Rectangle(int height, int width)
         {
